@@ -1,8 +1,10 @@
+
 import 'package:flutter/material.dart';
 import 'package:todo_app_crud/pages/todo_list.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(  MyApp(),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -14,7 +16,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // title: 'Flutter Demo',
+
+      // theme: Provider.of<ThemeProvider>(context).themeData,
       theme: ThemeData.dark(),
+
+
       // theme: ThemeData(
         
         // colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
